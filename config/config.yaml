@@ -33,10 +33,10 @@ cache:
 database:
   hostname: "localhost"
   port: 5432
-  user: "admin"
-  password: "admin"
-  database: "app"
-  testDatabase: "app_test"
+  user: "gruffalinas_user"
+  password: "gruffalinas_pass"
+  database: "gruffalinas"
+  testDatabase: "gruffalinas_test"
 
 mail:
   hostname: "localhost"

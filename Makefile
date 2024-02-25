@@ -69,6 +69,7 @@ run/live:
 		--build.include_ext "go, tpl, tmpl, html, css, scss, js, ts, sql, jpeg, jpg, gif, png, bmp, svg, webp, ico" \
 		--misc.clean_on_exit "true"
 
+include .env
 
 # ==================================================================================== #
 # SQL MIGRATIONS
