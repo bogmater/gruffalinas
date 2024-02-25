@@ -1,0 +1,10 @@
+package templates
+
+templ Input(attrs templ.Attributes, label, id string) {
+    <div class="field">
+      <label for="{ id }" class="label">{ label }</label>
+      <div class="control">
+        <input class="input" id="{ id }"  { attrs... }/>
+      </div>
+    </div>
+}

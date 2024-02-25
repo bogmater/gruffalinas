@@ -49,8 +49,14 @@ test/cover:
 build:
 	go build -o=/tmp/bin/web ./cmd/web
 
+## templ: generate a-h/templ templates
+.PHONY: templ
+templ:
+	templ generate
+
 ## run: run the cmd/web application
 .PHONY: run
+run: templ
 run: build
 	/tmp/bin/web
 

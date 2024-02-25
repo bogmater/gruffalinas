@@ -1,6 +1,6 @@
 http:
   hostname: ""
-  port: 8888
+  port: 1323
   readTimeout: "5s"
   writeTimeout: "10s"
   idleTimeout: "2m"

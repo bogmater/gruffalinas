@@ -51,7 +51,7 @@ type (
 
 	AppConfig struct {
 		Name          string
-		Environment   string
+		Environment   environment
 		EncryptionKey string
 		Timeout       time.Duration
 		PasswordToken struct {
@@ -62,7 +62,7 @@ type (
 
 	DatabaseConfig struct {
 		Hostname string
-		Port     string
+		Port     uint16
 		User     string
 		Password string
 		Database string
@@ -74,7 +74,7 @@ func GetConfig() (Config, error) {
 
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath("../config")
+	viper.AddConfigPath("config")
 
 	viper.AutomaticEnv()
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))

@@ -1,0 +1,21 @@
+package templates
+
+templ Login() {
+    <section class="section">
+      <div class="container">
+          <form method="POST" target="/login">
+              <div class="columns is-centered">
+                  <div class="column is-3">
+                      @Input(templ.Attributes{"type": "text", "name": "email", "value": ""},
+                      "Email",
+                      "email")
+                      @Input(templ.Attributes{"type": "password", "name": "password", "value": ""},
+                      "Password",
+                      "password")
+                      <button class="button is-primary">Login</button>
+                  </div>
+              </div>
+          </form>
+      </div>
+    </section>
+}
